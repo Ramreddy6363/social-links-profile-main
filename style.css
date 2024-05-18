@@ -1,0 +1,130 @@
+@font-face {
+    font-family:'Inter';
+    src: url('assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+/*Globel veriables*/
+:root{
+ /*===== primary color ====*/
+--Green: hsl(75, 94%, 57%);
+/*===== Neutral color =====*/
+--White: hsl(0, 0%, 100%);
+--Grey: hsl(0, 0%, 20%);
+--DarkGrey: hsl(0, 0%, 12%);
+--Black: hsl(0, 0%, 8%);
+
+/*===== font weight =====*/
+--fw-regular:400;
+--fw-medium:600;
+--fw-bold:700;
+}
+
+/*====  css reset ===*/
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Inter',  Roboto,sans-serif;
+    font-size: 100%;
+}
+
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    line-height: 1.5;
+    width: 100%;
+    min-height: 100vh;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+/*==== Css reset End ====*/
+
+body{
+    background-color: var(--Black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container{
+    background-color:var(--DarkGrey);
+    max-width: 25rem;
+    width: 100%;
+    padding: 3em;
+    border-radius: 0.5rem;
+}
+
+.container img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: block;
+    margin-inline: auto;
+    margin-bottom: 1.25rem;
+}
+
+.item1{
+ color: var(--White);
+ font-weight: var(--fw-medium);
+ font-size: 1.5rem;
+ text-align: center;
+ margin-bottom: 5px;
+}
+
+.item2{
+color: var(--Green);
+font-size: 0.75rem;
+font-weight: var(--fw-medium);
+text-align: center;
+margin-bottom: 1.25rem;
+}
+.item3{
+    color: var(--White);
+    opacity: 0.75;
+    font-size: 0.75rem;
+    text-align: center;
+    margin-bottom:1rem;
+}
+.options{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 0.75rem;
+   font-size: 0.75rem;
+}
+.option{
+    color: var(--White);
+    box-sizing: border-box;
+    background-color:var(--Grey);
+    padding:0.75em;
+    text-align: center;
+    font-weight: var(--fw-bold);
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 0;
+}
+
+.option:hover{
+    background-color: var(--Green);
+    color: var(--Grey);
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
+}
